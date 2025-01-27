@@ -1,2 +1,2 @@
-# MLKitDocScannerCapacitor-GE
+# MLKitDocScannerCapacitorGE
 Derived from Google ML kit
