@@ -75,7 +75,7 @@ public class CapacitorMlkitDocScannerPluginGE extends Plugin {
                                 GmsDocumentScanningResult scanningResult = GmsDocumentScanningResult
                                         .fromActivityResultIntent(data);
                                 if (scanningResult != null) {
-                                    handleScanResult(scanningResult, savedCall);
+                                    handleScanResponse(scanningResult, savedCall);
                                 } else {
                                     savedCall.reject("Kein Scan-Ergebnis erhalten.");
                                 }
@@ -156,7 +156,7 @@ public class CapacitorMlkitDocScannerPluginGE extends Plugin {
                 });
     }
 
-    private void handleScanResult(GmsDocumentScanningResult scanningResult, PluginCall call) {
+    private void handleScanResponse(GmsDocumentScanningResult scanningResult, PluginCall call) {
         if (scanningResult == null) {
             call.reject("Scan-Ergebnis ist null.");
             return;
