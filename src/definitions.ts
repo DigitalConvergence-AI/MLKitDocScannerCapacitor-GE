@@ -20,5 +20,5 @@ export interface ScanResult {
 }
 
 export interface CapacitorMlkitDocScannerPluginGE{
-  startScan(options: StartScanOptions): Promise<ScanResult>;
+  captureScan(options: StartScanOptions): Promise<ScanResult>;
 }

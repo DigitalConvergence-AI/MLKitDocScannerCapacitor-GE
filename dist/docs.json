@@ -1,0 +1,138 @@
+{
+  "api": {
+    "name": "CapacitorMlkitDocScannerPluginGE",
+    "slug": "capacitormlkitdocscannerpluginge",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "captureScan",
+        "signature": "(options: StartScanOptions) => Promise<ScanResult>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "StartScanOptions"
+          }
+        ],
+        "returns": "Promise<ScanResult>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "ScanResult",
+          "StartScanOptions"
+        ],
+        "slug": "captureScan"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "ScanResult",
+      "slug": "scanresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "pages",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "Page"
+          ],
+          "type": "Page[]"
+        },
+        {
+          "name": "pdf",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "Pdf"
+          ],
+          "type": "Pdf"
+        }
+      ]
+    },
+    {
+      "name": "Page",
+      "slug": "page",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "imageUri",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Pdf",
+      "slug": "pdf",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "pdfUri",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "pageCount",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "StartScanOptions",
+      "slug": "startscanoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "pageLimit",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "galleryImportAllowed",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "scannerMode",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "'SCANNER_MODE_BASE' | 'SCANNER_MODE_BASE_WITH_FILTER' | 'SCANNER_MODE_FULL' | undefined"
+        },
+        {
+          "name": "resultFormat",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "'JPEG' | 'PDF' | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
