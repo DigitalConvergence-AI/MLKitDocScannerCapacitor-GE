@@ -22,7 +22,7 @@
     "url": "https://github.com/DigitalConvergence-AI/MLKitDocScannerCapacitor-GE.git"
   },
   "bugs": {
-    "url": "https://github.com/DigitalConvergence-AI/MLKitDocScannerCapacitor-GE/issuess"
+    "url": "https://github.com/DigitalConvergence-AI/MLKitDocScannerCapacitor-GE/issues"
   },
   "keywords": [
     "capacitor",
@@ -31,7 +31,7 @@
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
-    "verify:ios": "xcodebuild -scheme CapacitorMlkitDocumentScanner -destination generic/platform=iOS",
+    "verify:ios": "xcodebuild -scheme CapacitorMlkitDocScannerGE -destination generic/platform=iOS",
     "verify:android": "cd android && ./gradlew clean build test && cd ..",
     "verify:web": "npm run build",
     "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
@@ -39,7 +39,7 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\" --plugin=prettier-plugin-java",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api CapacitorMlkitDocumentScannerPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api CapacitorMlkitDocScannerPluginGE --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.mjs",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
