@@ -6,7 +6,7 @@ import type { CapacitorMlkitDocScannerPluginGE } from './definitions';
 const CapacitorMlkitDocScannerGE = registerPlugin<CapacitorMlkitDocScannerPluginGE>(
   'CapacitorMlkitDocScannerGE',
   {
-    web: () => import('./web').then((m) => new m.CapacitorMlkitDocumentScannerWeb()),
+    web: () => import('./web').then((m) => new m.CapacitorMlkitDocScannerWeb()),
   },
 );
 
