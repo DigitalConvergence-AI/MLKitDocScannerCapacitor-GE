@@ -19,7 +19,7 @@ public class CapacitorMlkitDocScannerPluginGE: CAPPlugin, CAPBridgedPlugin {
 //will be inplemented once google release MLKIT vision for iOS
 //https://developers.google.com/ml-kit/vision/doc-scanner/iOS
 
-    @objc func hello(_ call: CAPPluginCall) {
+    @objc func echo(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""
         call.resolve([
             "value": implementation.echo(value)
