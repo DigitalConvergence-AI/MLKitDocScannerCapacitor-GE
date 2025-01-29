@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-mlkit-doc-scanner-ge",
+  "name": "capacitor-mlkit-doc-scanner-ge-v1",
   "version": "1.0.13",
   "description": "A Capacitor plugin for ML Kit Document Scanner",
   "main": "dist/plugin.cjs.js",
