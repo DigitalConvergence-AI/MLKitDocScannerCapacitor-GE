@@ -6,14 +6,14 @@ import UIKit
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(CapacitorMlkitDocScannerPluginGE)
-public class CapacitorMlkitDocScannerPluginGE: CAPPlugin, CAPBridgedPlugin {
-    public let identifier = "CapacitorMlkitDocScannerPluginGE"
-    public let jsName = "CapacitorMlkitDocScannerGE"
+@objc(CapacitorMlkitDocScannerPluginGEV1)
+public class CapacitorMlkitDocScannerPluginGEV1: CAPPlugin, CAPBridgedPlugin {
+    public let identifier = "CapacitorMlkitDocScannerPluginGEV1"
+    public let jsName = "CapacitorMlkitDocScannerGEV1"
     public let pluginMethods: [CAPPluginMethod] = [
         CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise)
     ]
-    private let implementation = CapacitorMlkitDocScannerGE()
+    private let implementation = CapacitorMlkitDocScannerGEV1()
     
     
 //will be inplemented once google release MLKIT vision for iOS
