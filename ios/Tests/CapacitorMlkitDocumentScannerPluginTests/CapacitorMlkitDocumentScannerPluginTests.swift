@@ -1,7 +1,7 @@
 import XCTest
-@testable import CapacitorMlkitDocScannerPluginGE
+@testable import CapacitorMlkitDocumentScannerPlugin
 
-class CapacitorMlkitDocScannerGETests: XCTestCase {
+class CapacitorMlkitDocumentScannerTests: XCTestCase {
     func testEcho() {
         // This is an example of a functional test case for a plugin.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
